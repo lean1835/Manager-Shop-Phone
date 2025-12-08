@@ -1,0 +1,6 @@
+#FileLock
+#Tue Sep 23 11:56:43 ICT 2025
+server=192.168.1.12\:61029
+hostName=192.168.1.12
+method=file
+id=19974ee585194c43341680fe5d78328d2442ec032c5
