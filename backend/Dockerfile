@@ -5,9 +5,10 @@ COPY pom.xml .
 COPY .mvn .mvn
 COPY src ./src
 
-ENV MAVEN_OPTS="-Xmx256m"
+# Giảm RAM cho Maven để tránh Railway build OOM
+ENV MAVEN_OPTS="-Xmx128m"
 
-RUN mvn -s /app/.mvn/settings.xml -e -X clean package -Dmaven.test.skip=true
+RUN mvn -e -X clean package -Dmaven.test.skip=true
 
 FROM eclipse-temurin:17-jdk
 WORKDIR /app
