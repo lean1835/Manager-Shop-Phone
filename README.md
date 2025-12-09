@@ -1,1 +1,2 @@
-# Manager-Shop-Phone
+# Hi, it's my first project!
+
