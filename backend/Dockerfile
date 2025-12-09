@@ -9,8 +9,8 @@ ENV MAVEN_OPTS="-Xmx256m"
 
 RUN mvn -e -X clean package -Dmaven.test.skip=true
 
-# Run stage
-FROM eclipse-temurin:17-jdk-alpine
+# Run stage (KHÔNG DÙNG ALPINE)
+FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 COPY --from=build /app/target/*.jar app.jar
