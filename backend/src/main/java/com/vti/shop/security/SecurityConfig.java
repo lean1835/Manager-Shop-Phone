@@ -1,6 +1,5 @@
 package com.vti.shop.security;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -13,23 +12,26 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityConfig {
-//huhu
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            .csrf(csrf -> csrf.disable())
-            .cors(cors -> {})
-            .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-            .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
-                .requestMatchers("/auth/**").authenticated()   // /auth/me dùng để FE check đăng nhập
-                .anyRequest().authenticated()                  // còn lại yêu cầu login
-            )
-            .httpBasic(httpBasic -> {}); // <-- BASIC AUTH BẬT Ở ĐÂY
+                .csrf(csrf -> csrf.disable())
+                .cors(cors -> {}) // Cấu hình CORS (nếu cần mở cho FE gọi vào)
+                .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .authorizeHttpRequests(auth -> auth
+                        // Cho phép TẤT CẢ truy cập không cần đăng nhập
+                        .anyRequest().permitAll()
+                );
+        // ĐÃ XÓA dòng .httpBasic(...) để không hiện popup nữa
+
         return http.build();
     }
 
-    @Bean public PasswordEncoder passwordEncoder() { return new BCryptPasswordEncoder(); }
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration cfg) throws Exception {
