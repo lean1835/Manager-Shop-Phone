@@ -1,19 +1,18 @@
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+# --- Stage 1: Build bằng Maven ---
+FROM maven:3.9-eclipse-temurin-17-alpine AS build
 WORKDIR /app
+COPY . .
+# Lệnh này sẽ đóng gói code thành file .jar và bỏ qua bước test để build nhanh hơn
+RUN mvn clean package -DskipTests
 
-COPY pom.xml .
-
-# Giảm RAM cho Maven để tránh Railway build OOM
-ENV MAVEN_OPTS="-Xmx128m"
-
-# Giới hạn RAM cho Maven để không bị crash (quan trọng)
-ENV MAVEN_OPTS="-Xmx300m"
-
-# Chạy build bình thường, bỏ -X và -e để log gọn nhẹ
-RUN mvn clean package -Dmaven.test.skip=true
-
-FROM eclipse-temurin:17-jdk
+# --- Stage 2: Chạy ứng dụng ---
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
+# Copy file .jar từ Stage 1 sang Stage 2 (đổi tên thành app.jar cho gọn)
 COPY --from=build /app/target/*.jar app.jar
+
+# Mở cổng 8080 (Cổng mặc định của Spring Boot)
 EXPOSE 8080
+
+# Lệnh chạy ứng dụng
 ENTRYPOINT ["java", "-jar", "app.jar"]
