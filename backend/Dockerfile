@@ -1,18 +1,15 @@
-# --- Stage 1: Build bằng Maven ---
-FROM maven:3.9-eclipse-temurin-17-alpine AS build
+FROM maven:3-openjdk-17 AS build
 WORKDIR /app
+
 COPY . .
-# Lệnh này sẽ đóng gói code thành file .jar và bỏ qua bước test để build nhanh hơn
 RUN mvn clean package -DskipTests
 
-# --- Stage 2: Chạy ứng dụng ---
-FROM eclipse-temurin:17-jre-alpine
-WORKDIR /app
-# Copy file .jar từ Stage 1 sang Stage 2 (đổi tên thành app.jar cho gọn)
-COPY --from=build /app/target/*.jar app.jar
+# Run stage
 
-# Mở cổng 8080 (Cổng mặc định của Spring Boot)
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+
+COPY --from=build /app/target/shop-phone-0.0.1-SNAPSHOT.war phone.war
 EXPOSE 8080
 
-# Lệnh chạy ứng dụng
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-jar","phone.war"]
