@@ -1,0 +1,190 @@
+/* trang list css */
+.border-form {
+  border: 2px solid #ebedee; 
+  border-radius: 8px; 
+  padding: 20px; 
+  max-width: 90%; 
+  margin: 20px auto; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  /* background-color: #f9f9f9; */
+  
+}
+
+.title-form {
+  display: flex; 
+  /* justify-content: space-between; */
+  align-items: center; 
+  /* padding: 10px; */
+}
+.title-form h4{
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* nút button */
+.btn-custom {
+  border: 1px solid #b91c1c;  
+  background-color: white; 
+  color: #b91c1c;           
+}
+.btn-custom:hover {
+  background-color: #DC2626;  
+  color: white;           
+}
+
+.button-container{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.button-list{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button_add{
+  border: 1px solid #DC2626;  
+  background-color: #DC2626; 
+  color: white;           
+}
+.button_add:hover {
+  background-color: #b91c1c;  
+  color: white;
+}
+/* search */
+.search_input{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  height: 40px;
+  width: 380px;
+  margin-top: 20px;
+  margin-left: 250px;
+  box-shadow: -7px 6px 3px 0px #DC2626;
+  border-radius: 15px;
+ 
+}
+.search_input:focus{
+  box-shadow: 0 0 15px #DC2626;
+  background-color: white;
+  outline: none;
+}
+
+.button_search{
+  color: #b91c1c;
+  background-color: white;
+  box-shadow: -3px 6px 3px 0px #DC2626;
+  border-radius: 50%;
+  margin-left: 1%;
+  transition: 0.5s;
+}
+.button_search:hover{
+  color: rgb(255, 255, 255);
+  background-color: #b91c1c;
+  transform: scale(1.2);
+}
+/* search */
+.search_body{
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  margin: 0; 
+}
+.search_input1{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 420px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: -7px 6px 3px 0px #DC2626;
+  border-radius: 15px;
+ 
+}
+.search_input1:focus{
+  box-shadow: 0 0 15px #DC2626;
+  background-color: white;
+  outline: none;
+}
+
+.button_search1{
+  color: #b91c1c;
+  background-color: white;
+  box-shadow: -3px 6px 3px 0px #DC2626;
+  border-radius: 50%;
+  margin-left: 1%;
+  transition: 0.5s;
+}
+.button_search1:hover{
+  color: rgb(255, 255, 255);
+  background-color: #b91c1c;
+  transform: scale(1.2);
+}
+
+.button_exit{
+  /* border: 1px solid #090d14;   */
+  background-color: #383f47; 
+  color: white;           
+}
+.button_exit:hover {
+  background-color: #090d14;  
+  color: white;
+}
+
+/* page */
+.btn.btn-color{
+  background-color: #DC2626;
+  color: white; 
+}
+
+.btn.btn-color:hover {
+  background-color: #DC2626; 
+}
+
+/* button input */
+.button_input{
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 8.75rem;
+  background-color: #dc2626;
+  color: white;
+}
+.button_input:hover{
+  background-color: #DC2626;
+  color: white;
+}
+.button-add-product {
+  background: linear-gradient(90.63deg, rgb(239, 68, 68) -15.16%, rgb(248, 113, 113) 105.15%);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #DC2626;
+}
+
+.button-add-product:hover {
+  background: linear-gradient(90.63deg, rgb(239, 68, 68) -15.16%, rgb(248, 113, 113) 105.15%);
+  color: white;
+  border: 1px solid #DC2626;
+}
+/* nút button chọn nhà cung cấp */
+.button_supplier{
+  height: 38px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  background: linear-gradient(90.63deg, rgb(239, 68, 68) -15.16%, rgb(248, 113, 113) 105.15%);
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #DC2626;
+}
+.button_supplier:hover{
+  color: white;
+}

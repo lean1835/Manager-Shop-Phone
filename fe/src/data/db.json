@@ -1,0 +1,417 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "role": "Admin"
+    },
+    {
+      "id": "2",
+      "username": "banhang",
+      "password": "123",
+      "role": "Sales Staff"
+    },
+    {
+      "id": "3",
+      "username": "thukho",
+      "password": "123",
+      "role": "Warehouse Staff"
+    },
+    {
+      "id": "4",
+      "username": "kinhdoanh",
+      "password": "123",
+      "role": "Business Staff"
+    }
+  ],
+  "staff": [
+    {
+      "id": "1",
+      "name": "Nguyễn Văn An",
+      "dob": "1990-01-24",
+      "address": "123 Main Street, Hanoi, Vietnam",
+      "accountID": 1,
+      "phone": "0123456789"
+    },
+    {
+      "id": "2",
+      "name": "Trần Thị Lan",
+      "dob": "1995-03-15",
+      "address": "456 Market Street, Ho Chi Minh City, Vietnam",
+      "accountID": 2,
+      "phone": "0987654321"
+    },
+    {
+      "id": "3",
+      "name": "Lê Văn Cao",
+      "dob": "1998-05-20",
+      "address": "789 Park Street, Danang, Vietnam",
+      "accountID": 3,
+      "phone": "0123987654"
+    },
+    {
+      "id": "4",
+      "name": "Võ Tấn Trí",
+      "dob": "2003-06-320",
+      "address": "101 River Street, Hue, Vietnam",
+      "accountID": 4,
+      "phone": "0938274655"
+    },
+    {
+      "id": "5",
+      "name": "Trần Duy Linh",
+      "dob": "2003-06-320",
+      "address": "101 River Street, Hue, Vietnam",
+      "accountID": 4,
+      "phone": "0938274655"
+    },
+    {
+      "id": "6",
+      "name": "Lê An",
+      "dob": "2003-06-320",
+      "address": "101 River Street, Hue, Vietnam",
+      "accountID": 4,
+      "phone": "0938274655"
+    },
+    {
+      "id": "7",
+      "name": "Trương Ngọc Lĩnh",
+      "dob": "2003-06-320",
+      "address": "101 River Street, Hue, Vietnam",
+      "accountID": 4,
+      "phone": "0938274655"
+    },
+    {
+      "id": "8",
+      "name": "Lan Anh",
+      "dob": "2003-06-320",
+      "address": "101 River Street, Hue, Vietnam",
+      "accountID": 4,
+      "phone": "0938274655"
+    },
+    {
+      "name": "Nguyễn Trúc Linh",
+      "dob": "2001-01-17",
+      "address": "100 Phan Boi Chau",
+      "accountID": "4",
+      "phone": "0123456789",
+      "id": "cvVTIvP"
+    },
+    {
+      "name": "Thanh Phong",
+      "dob": "2003-06-20",
+      "address": "Đà Nẵng",
+      "accountID": "2",
+      "phone": "03596948492",
+      "id": "9OzWNBV",
+      "account": {
+        "id": "2",
+        "username": "banhang",
+        "password": "123",
+        "role": "Sales Staff"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "4",
+      "name": "Samsung Galaxy A15",
+      "price": "90000000",
+      "image": "https://cdn2.fptshop.com.vn/unsafe/2023_12_11_638379104714831641_samsung-galaxy-a15-xanh-1.jpg",
+      "screen_size": "6.5 inches",
+      "camera": "50MP",
+      "selfie": "13MP",
+      "cpu": "Exynos 1280",
+      "storage": "128GB",
+      "description": "Chiếc điện thoại phổ thông với camera tốt và màn hình lớn."
+    },
+    {
+      "id": "5",
+      "name": "iPhone 14",
+      "price": 22000000,
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-pro-256gb.png",
+      "screen_size": "6.1 inches",
+      "camera": "12MP",
+      "selfie": "12MP",
+      "cpu": "A15 Bionic",
+      "storage": "128GB",
+      "description": "Chiếc iPhone với hiệu năng mạnh mẽ và thiết kế tinh tế."
+    },
+    {
+      "id": "6",
+      "name": "Oppo Find X5 Pro",
+      "price": 26000000,
+      "image": "https://cdn.tgdd.vn/Products/Images/42/250622/oppo-find-x5-pro-den-thumb-600x600.jpg",
+      "screen_size": "6.7 inches",
+      "camera": "50MP",
+      "selfie": "32MP",
+      "cpu": "Snapdragon 8 Gen 1",
+      "storage": "256GB",
+      "description": "Chiếc flagship Oppo với camera tiên tiến và màn hình chất lượng cao."
+    },
+    {
+      "id": "7",
+      "name": "Samsung Galaxy Z Flip5",
+      "price": 26000000,
+      "image": "https://cdn2.fptshop.com.vn/unsafe/2024_3_28_638472353992099331_samsung-galaxy-zflip-5-xanh-ai.jpg",
+      "screen_size": "6.7 inches",
+      "camera": "12MP",
+      "selfie": "10MP",
+      "cpu": "Snapdragon 8 Gen 2",
+      "storage": "256GB",
+      "description": "Điện thoại màn hình gập độc đáo với hiệu năng cao."
+    },
+    {
+      "id": "8",
+      "name": "iPhone 13 Mini",
+      "price": 18000000,
+      "image": "https://cdn.phuckhangmobile.com/image/iphone-13-hong-900-24965j.jpg",
+      "screen_size": "5.4 inches",
+      "camera": "12MP",
+      "selfie": "12MP",
+      "cpu": "A15 Bionic",
+      "storage": "128GB",
+      "description": "Chiếc iPhone nhỏ gọn với hiệu năng mạnh mẽ."
+    },
+    {
+      "id": "9",
+      "name": "Oppo A98",
+      "price": 9000000,
+      "image": "https://images-cdn.ubuy.com.eg/660c2b3b3af5c079eb54a00d-unlocked-oppo-a98-5g-8gb-256gb-global.jpg",
+      "screen_size": "6.72 inches",
+      "camera": "64MP",
+      "selfie": "32MP",
+      "cpu": "Snapdragon 695",
+      "storage": "256GB",
+      "description": "Smartphone tầm trung với màn hình lớn và hiệu năng ổn định."
+    },
+    {
+      "id": "10",
+      "name": "Samsung Galaxy M14",
+      "price": "0",
+      "image": "https://bachlongstore.vn/vnt_upload/product/10_2023/82371371.png",
+      "screen_size": "6.6 inches",
+      "camera": "50MP",
+      "selfie": "13MP",
+      "cpu": "Exynos 1330",
+      "storage": "128GB",
+      "description": "Smartphone phổ thông với pin dung lượng cao."
+    }
+
+  ],
+  "suppliers": [
+    {
+      "id": "1",
+      "code": "SUP001",
+      "name": "Viettel Telecom",
+      "address": "01 Tran Huu Duc, Hanoi, Vietnam",
+      "phone": "18008098",
+      "email": "support@viettel.com.vn"
+    },
+    {
+      "id": "2",
+      "code": "SUP002",
+      "name": "VNPT",
+      "address": "57 Huynh Thuc Khang, Hanoi, Vietnam",
+      "phone": "18001091",
+      "email": "contact@vnpt.vn"
+    },
+    {
+      "id": "3",
+      "code": "SUP003",
+      "name": "Mobifone",
+      "address": "01 Pham Van Bach, Hanoi, Vietnam",
+      "phone": "18001090",
+      "email": "care@mobifone.vn"
+    },
+    {
+      "id": "4",
+      "code": "SUP004",
+      "name": "FPT Telecom",
+      "address": "FPT Tower, 10 Pham Van Bach, Hanoi, Vietnam",
+      "phone": "19006600",
+      "email": "hotro@fpt.vn"
+    },
+    {
+      "id": "5",
+      "code": "SUP005",
+      "name": "Vietnamobile",
+      "address": "18 Nguyen Dinh Chieu, Ho Chi Minh City, Vietnam",
+      "phone": "0922789789",
+      "email": "cskh@vietnamobile.com.vn"
+    },
+    {
+      "id": "6",
+      "code": "SUP006",
+      "name": "Gmobile",
+      "address": "15 Pham Hung, Hanoi, Vietnam",
+      "phone": "0993767676",
+      "email": "support@gmobile.vn"
+    },
+    {
+      "id": "7",
+      "code": "SUP007",
+      "name": "ITelecom",
+      "address": "20 Nguyen Trai, Hanoi, Vietnam",
+      "phone": "0879797979",
+      "email": "info@itelecom.vn"
+    },
+    {
+      "id": "8",
+      "code": "SUP008",
+      "name": "SCTV Telecom",
+      "address": "100 Nguyen Van Linh, Da Nang, Vietnam",
+      "phone": "19001878",
+      "email": "cskh@sctv.vn"
+    },
+    {
+      "id": "9",
+      "code": "SUP009",
+      "name": "Reddi",
+      "address": "22 Duy Tan, Hanoi, Vietnam",
+      "phone": "0559998999",
+      "email": "contact@reddi.vn"
+    },
+    {
+      "id": "10",
+      "code": "SUP010",
+      "name": "EVNTelecom",
+      "address": "28 Le Hong Phong, Ho Chi Minh City, Vietnam",
+      "phone": "19009099",
+      "email": "support@evntelecom.vn"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "Lê An",
+      "phone": "0123456789",
+      "address": "Đà Nẵng, Việt Nam",
+      "age": 21,
+      "email": "letc@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Nguyễn Trúc Linh",
+      "phone": "9876543210",
+      "address": "Huế, Việt Nam",
+      "age": 23,
+      "email": "pvd@example.com"
+    },
+    {
+      "id": "3",
+      "name": "Phong Lê",
+      "phone": "0905202020",
+      "address": "32A",
+      "age": 22,
+      "email": "clonemlp21@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "Võ Tấn Trí",
+      "phone": "0359694849",
+      "address": "Đà Nẵng",
+      "age": 29,
+      "email": "votantri2006@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "Nguyễn Văn An",
+      "phone": "0912345678",
+      "address": "Hà Nội, Việt Nam",
+      "age": 25,
+      "email": "nguyenvanan@example.com"
+    },
+    {
+      "id": "6",
+      "name": "Trần Thị Mai",
+      "phone": "0987654321",
+      "address": "Hồ Chí Minh, Việt Nam",
+      "age": 27,
+      "email": "tranthimai@example.com"
+    },
+    {
+      "id": "7",
+      "name": "Đặng Quang Huy",
+      "phone": "0934567890",
+      "address": "Cần Thơ, Việt Nam",
+      "age": 24,
+      "email": "dangquanghuy@example.com"
+    },
+    {
+      "id": "8",
+      "name": "Hoàng Thị Lan",
+      "phone": "0978123456",
+      "address": "Nha Trang, Việt Nam",
+      "age": 26,
+      "email": "hoangthilan@example.com"
+    },
+    {
+      "id": "9",
+      "name": "Phan Minh Tâm",
+      "phone": "0963456789",
+      "address": "Vũng Tàu, Việt Nam",
+      "age": 28,
+      "email": "phanminhtam@example.com"
+    },
+    {
+      "id": "10",
+      "name": "Bùi Đức Phúc",
+      "phone": "0956781234",
+      "address": "Hải Phòng, Việt Nam",
+      "age": 30,
+      "email": "buiducphuc@example.com"
+    },
+    {
+      "name": "Le Van An",
+      "phone": "0123456955",
+      "address": "thai nguyen",
+      "age": 34,
+      "email": "lean1835.vac@gmail.com",
+      "id": "qa96cFL"
+    }
+  ],
+  "stock": [
+    {
+      "id": "5",
+      "productId": 5,
+      "supplierId": 2,
+      "quantity": 50,
+      "importPrice": 6000000,
+      "importDate": "2025-01-12"
+    },
+    {
+      "id": "7",
+      "productId": 7,
+      "supplierId": 1,
+      "quantity": 60,
+      "importPrice": 7000000,
+      "importDate": "2025-01-18"
+    },
+    {
+      "id": "8",
+      "productId": 8,
+      "supplierId": 2,
+      "quantity": 45,
+      "importPrice": 6500000,
+      "importDate": "2025-01-20"
+    },
+    {
+      "id": "10",
+      "productId": 10,
+      "supplierId": 1,
+      "quantity": 55,
+      "importPrice": 7500000,
+      "importDate": "2025-01-25"
+    },
+    {
+      "productId": "5",
+      "supplierId": "1",
+      "quantity": "24",
+      "importPrice": "90000000",
+      "importDate": "2025-02-22",
+      "id": "wbjzsWG"
+    }
+  ]
+}

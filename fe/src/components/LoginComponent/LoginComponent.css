@@ -1,0 +1,89 @@
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(243, 241, 241) 50%, red 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    font-size: 24px;
+    z-index: 11;
+    height: 100vh;
+    width: calc(100vw - 50%);
+    justify-content: center;
+}
+.logo span{
+    font-family: selectedFont;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10%;
+}
+.logo img{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: -1; 
+    border-top-left-radius: 20px; /* Bo góc trên bên phải */
+    border-bottom-left-radius: 20px; /* Bo góc dưới bên phải */
+}
+.login{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login > * {
+    z-index: 2;
+    color: black;
+    font-weight: bold; 
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    width: 50%;
+    background-color: white;
+    z-index: 10;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+.form .heading{
+    text-align: center;
+    margin-top: 5%;
+}
+form .form-group {
+    width: 100%;
+    max-width: 400px;
+    padding-top: 4%;
+    padding-left: 10%;
+
+}
+.form-login .form-group input {
+    width: 95%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.sign-up{
+    align-items: center;
+    
+}
+.sign-up .form-submit {
+    width: 20%;
+    color: white;
+    border-radius: 5px;
+    font-size: 100%;
+    border: none;
+    margin-top: 10%;
+    text-align: center;
+    background-color: black;
+    margin-left: 40%;
+}
+.sign-up .form-submit:hover {
+    background-color: red;
+}

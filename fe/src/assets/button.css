@@ -1,0 +1,10 @@
+.gradient-button {
+    background: linear-gradient(180deg, #f71818 67.61%, #d9503f 95.18%);
+    border: none;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }

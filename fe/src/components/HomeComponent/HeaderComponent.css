@@ -1,0 +1,86 @@
+.navbar{
+    height: 90px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg, #f71818  67.61%, #d9503f 95.18%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo-header{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .logo-header .navbar-brand{
+    font-family: selectedFont;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #190e12;
+}
+.navbar .collapse{
+    height: 100%;
+    width: auto;
+}
+.navbar .header-left{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .logo-header .image{
+    width: 80px;
+    margin-top: 25px;
+}
+.navbar .collapse .navbar-nav{
+    width: 20%;
+}
+.navbar .collapse .d-flex{
+    width: 50%;
+    margin-left: 20px;
+    height: 40%;
+}
+.search-container {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    position: relative;
+    border-radius: 25px;
+    background-color: white;
+    padding: 5px;
+    border: none;
+}
+.search-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 10px;
+    outline: none;
+    color: red;
+    background-color: #f8d8d4;
+    border-radius: 50%;
+}
+.navbar .header-left .shopping-cart{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+}
+.logout{
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 45px;
+}

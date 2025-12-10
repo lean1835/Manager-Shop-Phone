@@ -1,0 +1,211 @@
+.choice_product{
+    position: relative;
+    background-size: cover;
+    /* background-image: url(https://i.pinimg.com/736x/d7/cf/ad/d7cfad4ec15c6d310681da321c666844.jpg); */
+    height: 1200px;
+}
+.bao{
+    background-color: white;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: white;
+    width: 65%;
+    height: 990px;
+    box-shadow: -17px 18px 20px 9px rgb(249 0 0 / 39%);
+}
+.bao .khung_start{
+    height: 65px;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Dịch ngược lại 50% kích thước */
+    font-style: italic;
+    font-size: 20px;
+    transition: 2s;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    background-color: rgb(247,247,247);
+    text-align: center;
+}
+.bao .khung_start h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.choice_product span{
+    color: rgb(214, 65, 24);
+    font-family: 'Pacifico', cursive;
+    margin-left: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.banner_choice{
+    border: 10px solid gray;
+}
+.display{
+    background-color: whitesmoke;
+    width: 35%;
+    
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    box-shadow: -12px 8px 5px 0px rgb(235 117 57);
+
+
+    border-radius: 15px; /* Bo tròn viền bảng */
+   
+}
+.choice_product .choice_display{
+    margin-left: 27%;
+    
+}
+.body_input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    font-size: 14px !important;
+    font-style: oblique !important;
+    color: black !important;
+
+}
+
+.search_input{
+    background-color: rgb(255, 255, 255);
+    width: 17%;
+    margin-left: 75%;
+    margin-top: 115px;
+    box-shadow: -7px 6px 3px 0px rgb(235 117 57);
+    border: 1px solid rgba(255, 0, 0, 0.856);
+    border-radius: 15px; /* Bo tròn viền bảng */
+    height: 39px;
+}
+.search_input:focus{
+    box-shadow: 0 0 15px rgba(215, 42, 33, 0.5);
+    background-color: white;
+    outline: none;
+}
+
+
+.button_search{
+    /* border: none; */
+    color: red;
+    background-color: white;
+    box-shadow: -3px 6px 3px 0px rgb(235 117 57);
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-left: 1%;
+    transition: 0.5s;
+}
+.button_search:hover{
+    /* border: none; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 17, 17);
+    transform: scale(1.2);
+}
+.button_choice{
+    margin-left: 35%;
+    width: 14%;
+    margin-top: 3%;
+    padding: 25px;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    transition: 0.7s;
+    font-style:normal;
+    /* ---- */
+    text-decoration: none;
+    border-radius: 100px;
+     background-color: white;
+     border: 5px solid rgb(242, 93, 0);
+    color: rgb(0, 0, 0);
+    transform: scale(0.6);
+    transition: 0.5s;
+ }
+ .button_choice:hover{
+     transform: scale(0.7);
+     font-size: 24px;
+     color: white;
+     background: linear-gradient(90deg, #fff2004d,#fa0000);
+ }
+ .button_exit_product{
+    
+    padding: 25px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    transition: 0.7s;
+    font-style:normal;
+    width: 12%;
+    /* ---- */
+    text-decoration: none;
+    border-radius: 100px;
+     background-color: white;
+     border: 5px solid rgba(202, 202, 202, 0.611);
+    color: rgb(0, 0, 0);
+    transform: scale(0.6);
+    transition: 0.5s;
+ }
+ .button_exit_product:hover{
+     transform: scale(0.7);
+     font-size: 24px;
+     color: rgb(255, 255, 255);
+     background: gray;
+ }
+.chon{
+    /* margin-left: 25%; */
+    margin: auto;
+    display: block;
+}
+/* chưa có css của bảng */
+.table {
+    margin: auto;
+    margin-top: 6%;
+    /* con */
+    box-shadow: -8px 9px 20px 0px rgb(199 194 194);
+    width: 90%;
+    border-collapse: collapse; /* Gộp viền */
+    border-radius: 15px; /* Bo tròn viền bảng */
+    overflow: hidden; /* Để viền không bị vỡ */
+
+}
+
+.th, .td {
+    padding: 26px 11px 30px 22px !important;
+    border-spacing: 20px !important;
+}
+
+.th {
+    text-align: center!important; 
+    background-color: rgb(230,55,46)!important; /* Màu nền tiêu đề */
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.tr:nth-child(even) {
+    background-color: #f9f9f9; /* Xen kẽ màu nền */
+}
+
+.tr:hover {
+    background-color: rgba(210, 12, 12, 0.726); /* Hiệu ứng hover */
+    color: white;
+    transition: 0.8s;
+}
+
+.pagination{
+        margin:auto ;
+        display: block;
+}
+
+.pre{
+    margin-left: 37%;
+    border-radius: 8px;
+    margin-top: 3%;
+}
+.post{
+    margin-left: 1%;
+    border-radius: 8px;
+    margin-top: 3%;
+}

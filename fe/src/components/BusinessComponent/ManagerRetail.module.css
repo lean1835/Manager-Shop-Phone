@@ -1,0 +1,173 @@
+.manager_retail{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    /* background-image: url(https://i.pinimg.com/736x/d7/cf/ad/d7cfad4ec15c6d310681da321c666844.jpg); */
+    background-size: cover;
+}
+
+.manager_retail .khung_start{
+    height: 65px;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Dịch ngược lại 50% kích thước */
+    font-style: italic;
+    font-size: 20px;
+    transition: 2s;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    background-color: rgb(247,247,247);
+    text-align: center;
+}
+.manager_retail .khung_start h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.button_choice_product{
+   margin-left: 2%;
+   margin-top: 65px;
+   padding: 20px;
+   border-radius: 8px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 22px;
+   transition: 0.7s;
+   font-style:normal;
+   /* ---- */
+   text-decoration: none;
+   border-radius: 100px;
+    background-color: white;
+    border: 5px solid rgb(242, 93, 0);
+   color: rgb(0, 0, 0);
+   transform: scale(0.6);
+}
+.button_choice_product:hover{
+    transform: scale(0.7);
+    font-size: 24px;
+    color: white;
+    background: rgb(274, 24, 24);
+}
+.khung{
+    position: absolute;
+    width: 1200px;
+    height: 1000px;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Dịch ngược lại 50% kích thước */
+    box-shadow: -17px 18px 20px 9px rgb(249 0 0 / 39%);
+    background-color: white;
+
+}
+.info_product{
+    border: 0px solid gainsboro;
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 2%;
+    border-radius: 15px;
+    height: 59%;
+    box-shadow: -8px 9px 20px 0px rgb(199 194 194);
+}
+
+.info_product .label{
+    margin-left: 15%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+    width: 300px;
+}
+.first_label{
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-style: oblique;
+
+}
+.info_product .span{
+    font-family: segoe ui;
+    font-size: 18px;
+    font-style: oblique;
+}
+.info_product h2{
+    color: rgb(214, 65, 24);
+    font-family: 'Pacifico', cursive;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+.form_input{
+    margin-left:20% ;
+    margin-top: 35px;
+    
+}
+.form_input .form_label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 27px;
+    width: 25%;
+}
+.form_input  input{
+    margin-left: 30px;
+    width: 30%;
+    height: 40px;
+    box-shadow: -7px 6px 3px 0px rgb(131, 127, 125);
+    border: none;
+    border-radius: 15px;
+}
+.form_input  input:focus{
+    box-shadow: 5px -3px 3px 3px  rgba(215, 42, 33, 0.5);
+    background-color: white;
+    outline: none;
+}
+.up_or_exit{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 1%;
+}
+.button_update{
+
+   padding: 20px;
+   border-radius: 4px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 25px;
+   transition: 0.7s;
+   font-style:normal;
+   /* ---- */
+   text-decoration: none;
+   border-radius: 100px;
+    background-color: white;
+    border: 5px solid rgb(255, 0, 0);
+   color: rgb(0, 0, 0);
+   transform: scale(0.6)
+}
+.button_update:hover{
+    transform: scale(0.7);
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(90deg, #fff2004d,#fa0000);
+}
+.button_exit{
+
+   padding: 20px;
+   border-radius: 4px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 25px;
+   transition: 0.7s;
+   font-style:normal;
+   /* ---- */
+   width: 15%;
+   text-decoration: none;
+   border-radius: 100px;
+    background-color: white;
+    border: 5px solid rgba(202, 202, 202, 0.832);
+   color: rgb(0, 0, 0);
+   transform: scale(0.6)
+}
+.button_exit:hover{
+    transform: scale(0.7);
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    background: gray;
+}

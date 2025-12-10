@@ -1,0 +1,14 @@
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 15px; 
+}
+
+.button-container .btn {
+    flex: 1; 
+    margin-right: 10px;
+}
+
+.button-container .btn:last-child {
+    margin-right: 0; 
+}

@@ -1,0 +1,21 @@
+/* Đảm bảo layout toàn trang */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Chiều cao tối thiểu = 100% màn hình */
+}
+
+/* Đẩy nội dung chính lên để footer luôn ở cuối */
+.content {
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+/* Định dạng footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}

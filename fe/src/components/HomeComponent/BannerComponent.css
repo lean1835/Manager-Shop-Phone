@@ -1,0 +1,112 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../public/banner4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .banner-promotion {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-mid {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.banner .banner-promotion .carousel {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+.banner .banner-promotion .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: -50px;
+}
+.banner .banner-promotion .carousel-control-prev {
+    left: -7%;
+}
+
+.banner .banner-promotion .carousel-control-next {
+    right: -7%;
+}
+
+.banner .banner-promotion .carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.banner .banner-promotion .carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.carousel-image {
+    width: 49%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.banner .banner-mid .carousel-control-prev {
+    left: -8%;
+}
+
+.banner .banner-mid .carousel-control-next {
+    right: -8%;
+}
+
+.banner .banner-mid .carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.banner .banner-mid .carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+.carousel-item, .carousel-image {
+    transform: scale(0.8);
+    opacity: 0;
+    animation: zoomIn 1s forwards;
+}
+
+.carousel-item.active, .carousel-image {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

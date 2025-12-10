@@ -1,0 +1,219 @@
+.manager_customer{
+    background-size: cover;
+    
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+.manager_customer span{
+    color: rgb(0, 0, 0);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+    padding-top: 10px;
+    margin-left: 13%;
+}
+.manager_customer .khung_start{
+    height: 65px;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Dịch ngược lại 50% kích thước */
+    font-style: italic;
+    font-size: 20px;
+    transition: 2s;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    background-color: rgb(247,247,247);
+    text-align: center;
+}
+.manager_customer .khung_start h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.chon{
+    /* margin-left: 25%; */
+    margin: auto;
+    display: block;
+}
+.button_edit{
+    margin-left: 32%;
+    width: 18%;
+    margin-top: 55px;
+    padding: 25px;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    transition: 0.7s;
+    font-style:normal;
+    /* ---- */
+    text-decoration: none;
+    border-radius: 100px;
+     background-color: white;
+     border: 5px solid rgb(242, 93, 0);
+    color: rgb(0, 0, 0);
+    transform: scale(0.6);
+    transition: 0.5s;
+ }
+ .button_edit:hover{
+     transform: scale(0.7);
+     font-size: 24 px;
+     color: white;
+     background: linear-gradient(90deg, #fff2004d,#fa0000);
+ }
+ .button_exit{
+    padding: 25px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    transition: 0.7s;
+    font-style:normal;
+    width: 14%;
+    /* ---- */
+    text-decoration: none;
+    border-radius: 100px;
+     background-color: white;
+     border: 5px solid rgba(202, 202, 202, 0.611);
+    color: rgb(0, 0, 0);
+    transform: scale(0.6);
+    transition: 0.5s;
+ }
+ .button_exit:hover{
+     transform: scale(0.7);
+     font-size: 24px;
+     color: rgb(255, 255, 255);
+     background: gray;
+ }
+ .search_input{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 31%;
+    margin-left: 4%;
+    margin-top: 103px;
+    box-shadow: -7px 6px 3px 0px rgb(235 117 57);
+    border: 1px solid rgba(255, 0, 0, 0.856);
+    border-radius: 15px;
+   
+}
+ .search_input:focus{
+    box-shadow: 0 0 15px rgba(215, 42, 33, 0.5);
+    background-color: white;
+    outline: none;
+}
+
+.button_search{
+    /* border: none; */
+    color: red;
+    background-color: white;
+    box-shadow: -3px 6px 3px 0px rgb(235 117 57);
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-left: 1%;
+    transition: 0.5s;
+}
+.button_search:hover{
+    /* border: none; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 17, 17);
+    transform: scale(1.2);
+}
+/* chưa css bảng */
+.table {
+    margin: auto;
+    margin-top: 3%;
+    /* con */
+    box-shadow: -8px 9px 20px 0px rgb(199 194 194);
+    width: 80%;
+    border-collapse: collapse; /* Gộp viền */
+    border-radius: 15px; /* Bo tròn viền bảng */
+    overflow: hidden; /* Để viền không bị vỡ */
+
+}
+
+.th, .td {
+    padding: 26px 11px 30px 22px !important;
+    border-spacing: 20px !important;
+}
+
+.th {
+    text-align: center!important; 
+    background-color: rgb(230,55,46)!important; /* Màu nền tiêu đề */
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.tr:nth-child(even) {
+    background-color: #f9f9f9; /* Xen kẽ màu nền */
+}
+
+.tr:hover {
+    background-color: rgba(210, 12, 12, 0.726); /* Hiệu ứng hover */
+    color: white;
+    transition: 0.8s;
+}
+
+.custom_select {
+    margin-left: 3%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    /* border: 0.3px solid rgba(242, 48, 0, 0.626); */
+    box-shadow: -7px 6px 3px 0px rgb(235 117 57);
+    border: 1px solid rgba(255, 0, 0, 0.856);
+
+}
+
+/* Khi chọn vào select */
+.custom_select:focus {
+    border-color: #b92929;
+    box-shadow: 0 0 15px rgba(215, 42, 33, 0.5);
+}
+
+/* Tùy chỉnh mũi tên */
+.custom_select::-ms-expand {
+    display:none; /* Ẩn trên IE */
+}
+
+
+.custom_select option {
+    background: white;
+    color: black;
+}
+.custom_select option:hover{
+    background: rgba(210, 12, 12, 0.726);
+    color: rgb(255, 255, 255);
+}
+.boc{
+    background-color: white;
+    position: absolute;
+    width: 75%;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    box-shadow: -17px 18px 20px 9px rgb(249 0 0 / 39%);
+    border-radius: 15px;
+}
+.pre{
+    margin-left: 39%!important;
+    border-radius: 8px!important;
+    margin-top: 1%!important;
+}
+.post{
+    margin-left: 1%!important;
+    border-radius: 8px!important;
+    margin-top: 3%!important;
+}
+.page{
+    color: rgb(214, 65, 24) !important;
+    font-family: 'Pacifico', cursive !important;
+    margin-left: 15px!important;
+    padding-top: 10px!important;
+    font-size: 20px!important;
+    font-weight: 700!important;
+}

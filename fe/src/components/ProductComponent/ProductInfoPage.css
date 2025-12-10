@@ -1,0 +1,10 @@
+.w-10 {
+    width: 10%;
+}
+
+.container {
+    border: none !important; /* Bỏ viền ngoài cùng */
+    background-color: white; /* Nền trắng cho sạch */
+    padding: 20px;
+    border-radius: 8px; /* Bo góc mềm mại hơn */
+}

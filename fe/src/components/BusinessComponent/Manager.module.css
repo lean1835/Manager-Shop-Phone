@@ -1,0 +1,114 @@
+.manager{
+    
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    height: 100%;
+     position: relative ;
+  }
+  .bao{
+    background-color: white;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 80px;
+    background-color: white;
+    width: 65%;
+    height: 770px;
+    box-shadow: -17px 18px 20px 9px rgb(249 0 0 / 39%);
+}
+.bao .khung_start{
+  height: 65px;
+  border-radius: 19px;
+  position: absolute;
+  width: 100%;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Dịch ngược lại 50% kích thước */
+  font-style: italic;
+  font-size: 20px;
+  transition: 2s;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  background-color: rgb(247,247,247);
+  text-align: center;
+}
+.bao .khung_start h1{
+  font-size: 30px;
+  margin-top: 10px;
+}
+  .button_retail{
+    text-decoration: none;
+    color: black;
+    padding: 100px;
+    transform: scale(0.7);
+    width: 330px;
+    border: 5px solid rgb(242, 93, 0);
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    border-radius: 100px;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+
+  .button_retail:hover{
+    background: linear-gradient(90deg, #fff2004d,#fa0000);
+    border-radius: 100%  ;
+    transform: rotate(3600deg);
+    transition: 0.5s;
+    color: black;
+    transform: scale(0.9);
+  }
+  .button_customer:hover{
+    background: linear-gradient(90deg, #fff2004d,#fa0000);
+    border-radius: 100%  ;
+    transform: rotate(3600deg);
+    transition: 0.5s;
+    color: black;
+    transform: scale(0.9);
+  }
+
+  .button_customer{
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+    padding: 100px;
+    transform: scale(0.7);
+    width: 340px;
+    border: 5px solid rgb(242, 93, 0);
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    border-radius: 100px;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(0, 0, 0)
+  }
+
+  .menu{
+    height: 1000px;
+    /* background-image: url(https://img.meta.com.vn/data/image/2022/12/30/background-tet-2023-12.jpg); */
+    background-size: cover;
+    position: relative;
+  }
+
+  .huh_chu{
+    position: absolute;
+    top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Dịch ngược lại 50% kích thước */ 
+    font-style: italic;
+    font-size: 55px;
+    transition: 2s;
+    color: black;
+    font-weight: bolder;
+  }
+  

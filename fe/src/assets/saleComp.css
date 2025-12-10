@@ -1,0 +1,311 @@
+/*css cho trang salemanager*/
+
+.container {
+    border: 3px solid #000;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('../../public/banner4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1.sale-manager {
+    font-size: 32px;
+    font-weight: bold;
+    color:#190e12;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.order-box {
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+}
+
+.order-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding-top: 31px;
+}
+
+.order-box-1 {
+    background-color: #ffffff;
+}
+
+.order-box-2 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-box label {
+    font-weight: bold;
+}
+
+.order-box input[type="tel"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.order-box button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #b81211;
+    border: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+.order-box button:hover {
+    background-color: #b81211;
+    color: white;
+    font-weight: bold;
+}
+
+.render-td {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Style the table headers */
+.render-th {
+    padding: 10px;
+    text-align: left;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Add spacing between table rows */
+.render-tr {
+    margin-bottom: 10px;
+}
+
+/* Add border and background color to the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Style the table rows and cells */
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Add padding and margin to the container */
+.container {
+    border: 3px solid #000;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+
+.order-box label,
+.order-box input[type="tel"],
+.order-box button {
+    margin-bottom: 10px;
+}
+
+/*css cho trang addnewcustomer*/
+
+/* CSS for AddNewCustomer component */
+
+.add-customer-container {
+    border: 3px solid #000;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.add-customer-container div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.add-customer-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.add-customer-container input,
+.add-customer-container button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid ;
+    border-radius: 4px;
+
+}
+
+.add-customer-container .add{
+    background-color: green;
+    color: white;
+}
+.add-customer-container button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+.add-customer-container .back{
+    background-color: gray;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+.add-customer-container button:hover {
+    font-weight: bold;
+}
+
+.add-customer-container .error-message {
+    color: red;
+    font-size: 12px;
+}
+
+/*css cho trang searchproduct*/
+
+/* CSS for SearchProduct component */
+
+.search-product-container {
+    border: 3px solid #000;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.search-product-container input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.search-product-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-product-container button:hover {
+    background-color: #272f33;
+}
+
+.search-product-container table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.search-product-container th, .search-product-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.search-product-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.search-product-container img {
+    width: 100px;
+    height: auto;
+}
+
+.search-product-container .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-product-container .modal-header,
+.search-product-container .modal-body,
+.search-product-container .modal-footer {
+    margin-bottom: 10px;
+}
+
+.search-product-container .modal-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-product-container .modal-footer button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-product-container .modal-footer button:hover {
+    background-color: #272f33;
+}
+.container .check-out{
+    padding: 10px 20px;
+    background-color: white;
+    color: #b81211;
+    border: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid red;
+    margin-top: 10px;
+}
+.container .check-out:hover{
+    background-color: #b81211;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .button_manager{
+  text-decoration: none;
+  color: black;
+  padding: 70px;
+  display: block;
+  
+} */
+
+.button_staff{
+  text-decoration: none;
+  color: black;
+  padding: 100px;
+  display: block;
+}
+select {
+         /* Chiều cao */
+       /* Khoảng cách bên trong */
+  font-size: 16px;      /* Cỡ chữ */
+
+
+  border: 2px solid black; /* Viền */
+  border-radius: 5px;   /* Bo tròn góc */
+     /* Ẩn kiểu mặc định của trình duyệt */
+  cursor: pointer;      /* Hiển thị con trỏ khi hover */
+}
+
