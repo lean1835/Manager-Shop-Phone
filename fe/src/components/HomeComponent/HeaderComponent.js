@@ -19,7 +19,7 @@ function HeaderComponent() {
         <>
             <nav class="navbar navbar-expand-lg bg-red">
                 <div class='logo-header'>
-                    <Link to="/home" onClick={handleLog}><img class='image' src='logo.png' /></Link>
+                    <Link to="/home" onClick={handleLog}><img class='image' src='/logo.png' /></Link>
                     <a type='button' onClick={handleLog} class="navbar-brand" >An Shop</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

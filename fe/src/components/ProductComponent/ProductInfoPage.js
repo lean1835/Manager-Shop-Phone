@@ -5,7 +5,9 @@ import AddProductModal from "./AddProductModal";
 import EditProduct from "./EditProduct";
 import "./ProductInfoPage.css";
 
-const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:8080/api";
+const API_BASE =
+  process.env.REACT_APP_API_BASE ||
+  "https://manager-shop-phone.onrender.com/api";
 
 const ProductInfoPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -40,8 +42,8 @@ const ProductInfoPage = () => {
   };
 
   // 🚀 Mở modal chỉnh sửa sản phẩm
-  const handleEditProduct = (id) => {
-    setEditProductId(id);
+  const handleEditProduct =async (id) => {
+   await setEditProductId(id);
     setEditModal(true);
   };
 

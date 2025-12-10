@@ -35,7 +35,7 @@ function ManageComponent() {
                 {(account.role === "Admin" || account.role === "Business Staff" || account.role === "Sales Staff") && (<div className='body-manage'>
                     <Link className="link" to="/saleManager"><div className='body-card'>
                         <li>Quản lý bán hàng</li>
-                        <img className='body-card-img' src='./QlBanHang.png' />
+                        <img className='body-card-img' src='./QLBanHang.png' />
                     </div></Link>
                 </div>
                 )}

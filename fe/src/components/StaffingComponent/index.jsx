@@ -8,6 +8,8 @@ import { getAllAccounts } from "../../services/accountService";
 import "../../assets/button.css";
 import "./index.css";
 import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export default function StaffingComponent() {
   const itemsPerPage = 5;
@@ -46,7 +48,9 @@ export default function StaffingComponent() {
         account: accountData.find((a) => String(a.id) === String(s.accountID)),
       }));
 
-      setStaff(combinedData.reverse());
+      // setStaff(combinedData.reverse());
+      setStaff(combinedData);
+
     } catch (error) {
       console.log(error);
     }
@@ -208,6 +212,10 @@ export default function StaffingComponent() {
               <Form.Label>Công việc</Form.Label>
               <Form.Select name='accountID' value={formData.accountID} onChange={handleChange}>
                 <option value=''>Chọn công việc</option>
+                <option value='Kỹ sư'>Kỹ sư</option>
+                <option value='Công nhân'>Công nhân</option>
+                <option value='Giáo viên'>Giáo viên</option>
+
                 {(accounts ?? []).map((account) => (
                   <option key={account.id} value={account.id}>
                     {account.role}

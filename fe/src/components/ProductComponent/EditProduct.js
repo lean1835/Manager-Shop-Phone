@@ -24,7 +24,9 @@ const EditProduct = ({ show, onClose, productId, onUpdate }) => {
     const fetchProduct = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get(`http://localhost:8080/api/products/${productId}`);
+        const response = await axios.get(
+          `https://manager-shop-phone.onrender.com/api/products/${productId}`
+        );
         setProduct(response.data);
       } catch (error) {
         console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
@@ -54,7 +56,7 @@ const EditProduct = ({ show, onClose, productId, onUpdate }) => {
     }
 
     try {
-      await axios.patch(`http://localhost:8080/api/products/${productId}`, product);
+      await axios.patch(`https://manager-shop-phone.onrender.com/api/products/${productId}`, product);
       onUpdate(product); // Cập nhật dữ liệu trên giao diện
       onClose(); // Đóng modal sau khi cập nhật thành công
     } catch (error) {

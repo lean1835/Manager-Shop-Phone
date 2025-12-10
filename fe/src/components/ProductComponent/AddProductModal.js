@@ -42,10 +42,13 @@ const AddProductModal = ({ show, onClose, onAdd }) => {
     try {
       console.log(" -------yêu cầu thêm sản phẩm -----");
       // Gửi dữ liệu lên JSON Server bằng Axios
-      const response = await axios.post("http://localhost:8080/api/products", {
-        id: Math.random().toString(16).slice(2), // Tạo ID ngẫu nhiên
-        ...newProduct,
-      });
+      const response = await axios.post(
+        "https://manager-shop-phone.onrender.com/api/products",
+        {
+          id: Math.random().toString(16).slice(2), // Tạo ID ngẫu nhiên
+          ...newProduct,
+        }
+      );
 
       // Kiểm tra phản hồi từ API
       if (response.status !== 201) {
