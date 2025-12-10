@@ -1,0 +1,16 @@
+# Bỏ qua thư viện của Nodejs (cho cả fe và root nếu có)
+node_modules/
+build/
+dist/
+.env
+
+# Bỏ qua file rác hệ thống
+.DS_Store
+Thumbs.db
+
+# Bỏ qua file Java/Spring Boot (nếu có backend chung repo)
+target/
+*.class
+.mvn/
+.idea/
+*.iml
