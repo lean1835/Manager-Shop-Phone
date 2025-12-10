@@ -123,17 +123,21 @@ export default function StaffingComponent() {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentStaff = staff.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(staff.length / itemsPerPage);
+  const totalPages = Math.ceil(staff.length / itemsPerPage) || 1;
 
   return (
-    <div className='container py-5 staff-wrapper red-shadow'>
+    <div className="container py-5 staff-wrapper red-shadow">
       <Card>
         <Card.Header>
           <div className="text-center fw-bold">Danh sách nhân viên</div>
         </Card.Header>
         <Card.Body>
-          <div className='mb-3'>
-            <Button className='gradient-button me-2' variant='primary' onClick={() => handleShowModal()}>
+          <div className="mb-3">
+            <Button
+              className="gradient-button me-2"
+              variant="primary"
+              onClick={() => handleShowModal()}
+            >
               Thêm nhân viên
             </Button>
           </div>
@@ -157,10 +161,18 @@ export default function StaffingComponent() {
                   <td>{staff.account?.role}</td>
                   <td>{staff.phone}</td>
                   <td>
-                    <Button size='sm' className='gradient-button me-2' onClick={() => handleShowModal(staff)}>
+                    <Button
+                      size="sm"
+                      className="gradient-button me-2"
+                      onClick={() => handleShowModal(staff)}
+                    >
                       Sửa
                     </Button>
-                    <Button size='sm' className='gradient-button me-2' onClick={() => handleDeleteConfirm(staff.id)}>
+                    <Button
+                      size="sm"
+                      className="gradient-button me-2"
+                      onClick={() => handleDeleteConfirm(staff.id)}
+                    >
                       Xóa
                     </Button>
                   </td>
@@ -170,51 +182,75 @@ export default function StaffingComponent() {
           </Table>
         </Card.Body>
         <Card.Footer>
-          <Pagination className='justify-content-center'>
-            {[...Array(totalPages)].map((_, index) => (
-              <Pagination.Item
-                key={index + 1}
-                active={index + 1 === currentPage}
-                onClick={() => setCurrentPage(index + 1)}
-              >
-                {index + 1}
-              </Pagination.Item>
-            ))}
-          </Pagination>
+          <div className="d-flex justify-content-center align-items-center gap-2">
+            <button
+              className="btn btn-outline-danger btn-sm"
+              onClick={() => setCurrentPage(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              &laquo; Trước
+            </button>
+            <span>
+              Trang {currentPage} / {totalPages}
+            </span>
+            <button
+              className="btn btn-outline-danger btn-sm"
+              onClick={() => setCurrentPage(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              Sau &raquo;
+            </button>
+          </div>
         </Card.Footer>
       </Card>
 
       <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>{selectedStaff ? "Chỉnh sửa nhân viên" : "Thêm nhân viên"}</Modal.Title>
+          <Modal.Title>
+            {selectedStaff ? "Chỉnh sửa nhân viên" : "Thêm nhân viên"}
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
-            <Form.Group className='mb-3'>
+            <Form.Group className="mb-3">
               <Form.Label>Họ và tên</Form.Label>
-              <Form.Control type='text' name='name' value={formData.name} onChange={handleChange} />
+              <Form.Control
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+              />
             </Form.Group>
-            <Form.Group className='mb-3'>
+            <Form.Group className="mb-3">
               <Form.Label>Ngày sinh</Form.Label>
               <Form.Control
-                type='date'
-                name='dob'
+                type="date"
+                name="dob"
                 value={formData.dob}
                 onChange={handleChange}
                 max={new Date().toISOString().split("T")[0]}
               />
             </Form.Group>
-            <Form.Group className='mb-3'>
+            <Form.Group className="mb-3">
               <Form.Label>Địa chỉ</Form.Label>
-              <Form.Control type='text' name='address' value={formData.address} onChange={handleChange} />
+              <Form.Control
+                type="text"
+                name="address"
+                value={formData.address}
+                onChange={handleChange}
+              />
             </Form.Group>
-            <Form.Group className='mb-3'>
+            <Form.Group className="mb-3">
               <Form.Label>Công việc</Form.Label>
-              <Form.Select name='accountID' value={formData.accountID} onChange={handleChange}>
-                <option value=''>Chọn công việc</option>
-                <option value='Kỹ sư'>Kỹ sư</option>
-                <option value='Công nhân'>Công nhân</option>
-                <option value='Giáo viên'>Giáo viên</option>
+              <Form.Select
+                name="accountID"
+                value={formData.accountID}
+                onChange={handleChange}
+              >
+                <option value="">Chọn công việc</option>
+                <option value="Kỹ sư">Kỹ sư</option>
+                <option value="Công nhân">Công nhân</option>
+                <option value="Giáo viên">Giáo viên</option>
 
                 {(accounts ?? []).map((account) => (
                   <option key={account.id} value={account.id}>
@@ -223,17 +259,22 @@ export default function StaffingComponent() {
                 ))}
               </Form.Select>
             </Form.Group>
-            <Form.Group className='mb-3'>
+            <Form.Group className="mb-3">
               <Form.Label>Số điện thoại</Form.Label>
-              <Form.Control type='text' name='phone' value={formData.phone} onChange={handleChange} />
+              <Form.Control
+                type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+              />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant='secondary' onClick={() => setShowModal(false)}>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
             Hủy
           </Button>
-          <Button variant='primary' onClick={handleSave}>
+          <Button variant="primary" onClick={handleSave}>
             Lưu
           </Button>
         </Modal.Footer>

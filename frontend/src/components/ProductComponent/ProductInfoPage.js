@@ -108,7 +108,10 @@ const ProductInfoPage = () => {
     <>
       <div className="container mt-4">
         <div className="d-flex justify-content-between mb-3">
-          <button className="btn btn-primary text-white" onClick={() => setShowModal(true)}>
+          <button
+            className="btn btn-primary text-white"
+            onClick={() => setShowModal(true)}
+          >
             Thêm mới hàng hóa
           </button>
 
@@ -133,15 +136,27 @@ const ProductInfoPage = () => {
             />
 
             {searchTerm && (
-              <button className="btn btn-success" onClick={() => setSearchTerm("")}>
+              <button
+                className="btn btn-success"
+                onClick={() => setSearchTerm("")}
+              >
                 Thoát
               </button>
             )}
           </div>
         </div>
 
-        <AddProductModal show={showModal} onClose={() => setShowModal(false)} onAdd={handleAddProduct} />
-        <EditProduct show={editModal} onClose={() => setEditModal(false)} productId={editProductId} onUpdate={handleUpdateProduct} />
+        <AddProductModal
+          show={showModal}
+          onClose={() => setShowModal(false)}
+          onAdd={handleAddProduct}
+        />
+        <EditProduct
+          show={editModal}
+          onClose={() => setEditModal(false)}
+          productId={editProductId}
+          onUpdate={handleUpdateProduct}
+        />
 
         <table className="table table-bordered">
           <thead className="table-light">
@@ -171,7 +186,9 @@ const ProductInfoPage = () => {
                   />
                 </td>
                 <td>{indexOfFirstItem + index + 1}</td>
-                <td><img src={product.image} alt={product.name} width="50" /></td>
+                <td>
+                  <img src={product.image} alt={product.name} width="50" />
+                </td>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.cpu}</td>
@@ -182,10 +199,16 @@ const ProductInfoPage = () => {
                 <td>{product.selfie}</td>
                 <td>{product.description}</td>
                 <td className="w-10">
-                  <button className="btn btn-success text-white p-2" onClick={() => handleEditProduct(product.id)}>
+                  <button
+                    className="btn btn-success text-white p-2"
+                    onClick={() => handleEditProduct(product.id)}
+                  >
                     Sửa
                   </button>
-                  <button className="btn btn-danger text-white p-2 m-2" onClick={() => handleDeleteSingleProduct(product.id)}>
+                  <button
+                    className="btn btn-danger text-white p-2 m-2"
+                    onClick={() => handleDeleteSingleProduct(product.id)}
+                  >
                     Xóa
                   </button>
                 </td>
@@ -194,35 +217,27 @@ const ProductInfoPage = () => {
           </tbody>
         </table>
 
-        <nav>
-          <ul className="pagination justify-content-center">
-            <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
-              <button className="page-link" onClick={() => setCurrentPage(currentPage - 1)}>
-                Trước
-              </button>
-            </li>
-            {[...Array(totalPages).keys()].map((number) => (
-              <li
-                key={number}
-                className={`page-item ${currentPage === number + 1 ? "active" : ""}`}
-              >
-                <button className="page-link" onClick={() => setCurrentPage(number + 1)}>
-                  {number + 1}
-                </button>
-              </li>
-            ))}
-            <li className={`page-item ${currentPage === totalPages ? "disabled" : ""}`}>
-              <button className="page-link" onClick={() => setCurrentPage(currentPage + 1)}>
-                Sau
-              </button>
-            </li>
-            <li className="ms-auto">
-              <button className="btn btn-danger text-white" onClick={handleDeleteSelectedProducts}>
-                Chọn và xoá nhiều SP
-              </button>
-            </li>
-          </ul>
-        </nav>
+        <div className="pagination-wrapper d-flex justify-content-center align-items-center gap-2">
+          <button
+            className="btn btn-outline-danger btn-sm"
+            onClick={() => setCurrentPage(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            &laquo; Trước
+          </button>
+
+          <span>
+            Trang {currentPage} / {totalPages}
+          </span>
+
+          <button
+            className="btn btn-outline-danger btn-sm"
+            onClick={() => setCurrentPage(currentPage + 1)}
+            disabled={currentPage === totalPages}
+          >
+            Sau &raquo;
+          </button>
+        </div>
       </div>
     </>
   );
